@@ -1,11 +1,17 @@
 import UIKit
 
+protocol HomeScreenDelegate: AnyObject {
+    func tappedStartButton()
+}
+
 final class HomeScreen: UIView, ViewCode {
+     weak var delegate: HomeScreenDelegate?
     
     private lazy var backgroudImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
         image.image = .imageHome
+        image.isUserInteractionEnabled = false
         image.enableViewCode()
         return image
     }()
@@ -21,7 +27,7 @@ final class HomeScreen: UIView, ViewCode {
     private lazy var starButton: UIButton = {
         let button = UIButton()
         button.setTitle("Começar", for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 14)
+        button.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         button.setTitleColor(.white, for: .normal)
         button.clipsToBounds = true
         button.layer.cornerRadius = 8
@@ -37,6 +43,18 @@ final class HomeScreen: UIView, ViewCode {
     
     @available(*, unavailable)
     required init?(coder: NSCoder) { nil }
+    
+    @objc func handleStartButton() {
+        delegate?.tappedStartButton()
+    }
+    
+    func delegate(delegate: HomeScreenDelegate?) {
+        self.delegate = delegate
+    }
+    
+    func setupAction() {
+        starButton.addTarget(self, action: #selector(handleStartButton), for: .touchUpInside)
+    }
     
     func setupHierarchy() {
         addSubview(backgroudImageView)
