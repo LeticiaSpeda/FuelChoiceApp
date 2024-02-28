@@ -15,6 +15,8 @@
 		E0972BA42B812DEE00211016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0972BA32B812DEE00211016 /* Assets.xcassets */; };
 		E0972BA72B812DEE00211016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0972BA52B812DEE00211016 /* LaunchScreen.storyboard */; };
 		E0972BB12B813E6600211016 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0972BB02B813E6600211016 /* HomeScreen.swift */; };
+		E0E0E57A2B862AAB002DDDF0 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E5792B862AAB002DDDF0 /* CalculatorViewController.swift */; };
+		E0E0E57C2B862BA9002DDDF0 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E57B2B862BA9002DDDF0 /* CalculatorScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E0972BA62B812DEE00211016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0972BA82B812DEE00211016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0972BB02B813E6600211016 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E0E0E5792B862AAB002DDDF0 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		E0E0E57B2B862BA9002DDDF0 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		E0972B992B812DEC00211016 /* FuelChoice */ = {
 			isa = PBXGroup;
 			children = (
+				E0E0E5792B862AAB002DDDF0 /* CalculatorViewController.swift */,
+				E0E0E57B2B862BA9002DDDF0 /* CalculatorScreen.swift */,
 				E0972BB02B813E6600211016 /* HomeScreen.swift */,
 				E0972B9E2B812DEC00211016 /* HomeViewController.swift */,
 				E08DD5B72B838579002D8589 /* Utilies */,
@@ -186,8 +192,10 @@
 				E08DD5B62B838551002D8589 /* UIView+Extensions.swift in Sources */,
 				E0972BB12B813E6600211016 /* HomeScreen.swift in Sources */,
 				E08DD5B32B8384B2002D8589 /* ViewCode.swift in Sources */,
+				E0E0E57C2B862BA9002DDDF0 /* CalculatorScreen.swift in Sources */,
 				E0972B9F2B812DEC00211016 /* HomeViewController.swift in Sources */,
 				E0972B9B2B812DEC00211016 /* AppDelegate.swift in Sources */,
+				E0E0E57A2B862AAB002DDDF0 /* CalculatorViewController.swift in Sources */,
 				E0972B9D2B812DEC00211016 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
